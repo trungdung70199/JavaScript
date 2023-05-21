@@ -1,0 +1,32 @@
+<!-- Use the Array.forEach() -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array forEach</title>
+</head>
+
+<body>
+    <h1>
+        JavaScript Arrays
+    </h1>
+    <h2>
+        The foEach() Method
+    </h2>
+    <p id="demo"></p>
+    <script>
+        const animals = ["Dog", "Cat", "Chicken", "Pig", "Mouse"];
+        let text = "<ul>";
+        animals.forEach(myFunction);
+        text += "</ul>";
+        document.getElementById("demo").innerHTML = text;
+
+        function myFunction(value) {
+            text += "<li>" + value + "</li>";
+        }
+    </script>
+</body>
+
+</html>

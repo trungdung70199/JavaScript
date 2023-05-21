@@ -1,0 +1,32 @@
+<!-- Adding Array Elements -->
+<!-- Using the push() -->
+<!-- The Difference Between Arrays and Objects
+In JavaScript, arrays use numbered indexes.  
+In JavaScript, objects use named indexes. -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Array</title>
+</head>
+
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The push Method</h2>
+    <p>The push method appends a new element to an array</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        const animals = ["dog", "cat", "bird", "mouse"];
+        document.getElementById("demo").innerHTML = animals;
+
+        function myFunction() {
+            animals.push("rabbit");
+            document.getElementById("demo").innerHTML = animals;
+        }
+    </script>
+</body>
+
+</html>
