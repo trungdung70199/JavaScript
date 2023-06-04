@@ -1,0 +1,24 @@
+<!-- The indexOf() searches an array for an element value  -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The indexOf() Method</h2>
+    <p id="demo"></p>
+    <script>
+        const animals = ["Bird", "Cat", "Chicken", "Dog", "Pig", "Cat"];
+        let position = animals.indexOf("Cat") + 1;
+        // let last = animals.lastIndexOf("Cat") + 1;
+        document.getElementById("demo").innerHTML = "Cat is found in position " + position;
+        // document.getElementById("demo").innerHTML = "Cat is found in last " + last;
+    </script>
+</body>
+
+</html>
