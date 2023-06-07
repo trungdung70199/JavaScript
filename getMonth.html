@@ -1,0 +1,27 @@
+<!-- getMonth() method -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getMonth</title>
+</head>
+
+<body>
+    <h1>JavaScript Dates</h1>
+    <h2>JavaScript getMonth()</h2>
+    <p>Return the month as a number</p>
+    <p>Can use an array of names to return the month as a name: </p>
+    <p id="demo"></p>
+    <script>
+        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
+            "Aug", "Sep", "Oct", "Nov", "Dec"
+        ];
+        const d = new Date("2023-06-07");
+        let month = months[d.getMonth()];
+        document.getElementById("demo").innerHTML = month;
+    </script>
+</body>
+
+</html>
