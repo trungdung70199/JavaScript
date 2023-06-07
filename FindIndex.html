@@ -1,0 +1,27 @@
+<!-- JavaScript Array findIndex() -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>findIndex</title>
+</head>
+
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The findIndex() Method</h2>
+    <p id="demo"></p>
+    <script>
+        const numbers = [4, 10, 20, 30, 45, 23];
+        document.getElementById("demo").innerHTML = "First number over 20 has index s" +
+            numbers.findIndex(myFunction);
+
+        function myFunction(value) {
+            return value > 20;
+        }
+    </script>
+</body>
+
+</html>
