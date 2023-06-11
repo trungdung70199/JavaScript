@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compares Dates</title>
+</head>
+
+<body>
+    <h1>Compares Dates</h1>
+    <p>Dates can easily be compared</p>
+    <p id="demo"></p>
+    <script>
+        let text = "";
+        const today = new Date();
+        const someday = new Date();
+        someday.setFullYear(2023, 6, 7);
+        if (someday > today) {
+            text = "Today is before May 7, 2100";
+        } else {
+            text = "Today is after May 7, 2100";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>

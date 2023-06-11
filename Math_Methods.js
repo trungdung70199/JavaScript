@@ -27,3 +27,10 @@ console.log(Math.sign(-2));
 console.log(Math.sign(3));
 console.log(Math.sign(0));
 console.log(Math.sign(1));
+
+// Math.pow
+// Dua ra boi cua 1 so
+console.log(Math.pow(2, 3));
+console.log(Math.pow(3, 3));
+console.log(Math.pow(4, 2));
+console.log(Math.pow(5, 2));
