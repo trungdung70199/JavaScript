@@ -5,3 +5,5 @@ console.log(t);
 let u = 5;
 t *= 5;
 console.log(u);
+// Numbers of type
+console.log(typeof(t));

@@ -15,7 +15,7 @@ console.log(Math.ceil(4.1));
 console.log(Math.ceil(-4.3));
 
 // Math.floor(): returns the value of x rounded down to its nearest integer
-console.log("Math.floor method'example: ");
+console.log("Math.floor method's example: ");
 console.log(Math.floor(2.4));
 console.log(Math.floor(2.7));
 console.log(Math.floor(-2.2));
