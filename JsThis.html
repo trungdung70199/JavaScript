@@ -1,0 +1,31 @@
+<!-- The JavaScript this Keyword -->
+<!-- the this keyword refers to an object -->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keyword</title>
+</head>
+
+<body>
+    <h1>
+        The JavaScript <i>this</i> Keyword
+    </h1>
+    <p id="demo"></p>
+    <script>
+        const person = {
+            firstName: "Dung",
+            lastName: "Nguyen",
+            id: 7199,
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        document.getElementById("demo").innerHTML = person.fullName();
+    </script>
+</body>
+
+</html>

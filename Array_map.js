@@ -7,4 +7,5 @@ const number2 = number1.map(myFunction);
 function myFunction(value) {
     return value * 2;
 }
+
 console.log(number2);

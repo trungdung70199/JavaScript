@@ -1,0 +1,25 @@
+<!-- Global Variable -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global</title>
+</head>
+
+<body>
+    <h2>JavaScript Scope</h2>
+    <p>A Global variable can be accessed from any script or function</p>
+    <p id="demo"></p>
+    <script>
+        let carName = "BMW";
+        myFunction();
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "I can display" + carName;
+        }
+    </script>
+</body>
+
+</html>

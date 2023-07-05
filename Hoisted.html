@@ -1,0 +1,22 @@
+<!-- Initializations are not hoisted -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Hoisted</title>
+</head>
+
+<body>
+    <h1>JavaScript Hoisting</h1>
+    <p id="demo"></p>
+    <script>
+        var x = 10;
+        var y = 5;
+
+        elem = document.getElementById("demo");
+        elem.innerHTML = x + " " + y;
+    </script>
+</body>
+
+</html>
