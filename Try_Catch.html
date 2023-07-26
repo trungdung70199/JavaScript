@@ -1,0 +1,33 @@
+<!-- Try_Catch_ Finally-->
+<!-- Try: code block to run -->
+<!-- Catch: Code block to handle any error-->
+<!-- Finally: Code block to run regardless of result -->
+<!-- Throw: defines a custom error -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try_Catch</title>
+</head>
+
+<body>
+    <h2>JavaScript error Handing</h2>
+
+    <p>How to use catch to display an error</p>
+
+    <p id="demo"></p>
+
+    <p>Try_Catch</p>
+
+    <script>
+        try {
+            adddlert("Welcome guest");
+        } catch (error) {
+            document.getElementById("demo").innerHTML = error.message;
+        }
+    </script>
+</body>
+
+</html>
