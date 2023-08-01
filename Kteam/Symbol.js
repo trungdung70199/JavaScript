@@ -25,3 +25,16 @@ console.log(typeof(c));
 
 d = Symbol();
 e = Symbol();
+
+console.log(d == e);
+
+sb = Symbol('aa')
+
+obj = {
+    Name: 'Gamer',
+    Age: 20,
+    [sb]: 'AAAA'
+}
+console.log(obj[sb]);
+console.log(obj['Name']);
+console.log(obj['Age']);
