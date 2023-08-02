@@ -1,0 +1,40 @@
+<!-- JavaScript Debugging -->
+
+<!-- The console.log() method -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug</title>
+</head>
+
+<body>
+    <h2>Debugging</h2>
+    <h2>JavaScript Debugger</h2>
+    <p id="demo"></p>
+    <!-- <p>Result is:</p> -->
+    <p>
+        Active debugging in the browser (Chrome, IE, FireFox) with F12, and select "Console" in the debugger menu.
+    </p>
+    <!-- The debugger Keyword: debugger keyword stops the execution
+    of JS and calls the debugging function-->
+
+    <p>
+        With the debugger turned on, the code below should stop executing before it executes the third line.
+    </p>
+    <script>
+        a = 5;
+        b = 10;
+        c = a + b;
+        console.log(c);
+
+        let x = 15 * 5;
+        debugger;
+        document.getElementById("demo").innerHTML = x;
+        //document.write("")
+    </script>
+</body>
+
+</html>
