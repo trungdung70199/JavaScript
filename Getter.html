@@ -1,0 +1,29 @@
+<!-- JavaScript Function or Getter -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getter
+        <title>
+</head>
+
+<body>
+    <h1>JavaScript Object Method</h1>
+    <p>Object data can be accessed using property stored as a function</p>
+    <p id="demo"></p>
+    <script>
+        const person = {
+            firstName: "Dung",
+            lastName: "Nguyen",
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+    </script>
+
+    document.getElementById("demo").innerHTML = peron.fullName();
+</body>
+
+</html>
