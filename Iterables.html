@@ -1,0 +1,36 @@
+<!-- Iterables -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterables</title>
+</head>
+
+<body>
+    <h2>JavaScript Iterables</h2>
+    <p>Iterate over a String</p>
+    <p id="demo"></p>
+    <p id="memo"></p>
+    <script>
+        const name = "JavaScript";
+        // List all Elements
+        let txt = ""
+        for (const x of name) {
+            txt += x + "<br>";
+        }
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+    <p>Iterable over an Array</p>
+    <script>
+        const letters = ["a", "b", "c", "d"];
+        // list all elements
+        let text = "";
+        for (const y of letters) {
+            text += y + "<br>";
+        }
+        document.getElementById("memo").innerHTML = text;
+    </script>
+</body>
+
+</html>

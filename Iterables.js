@@ -1,7 +1,7 @@
 // JavaScript Iterables (for.. of)
-const name = "JavaScript";
+const X = "JavaScript";
 let text = "";
-for (const x of name) {
+for (const x of X) {
     text += x;
 }
 console.log(text);

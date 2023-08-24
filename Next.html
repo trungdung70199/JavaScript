@@ -1,0 +1,40 @@
+<!-- A JavaScript iterable is an obj has Symbol.iterator -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next</title>
+</head>
+
+<body>
+    <h2>JavaScript Iterables</h2>
+    <p id="demo"></p>
+    <script>
+        myNumber = {};
+        myNumber[Symbol.iterator] = function() {
+            let n = 0;
+            done = false;
+            return {
+                next() {
+                    n += 10;
+                    if (n == 100) {
+                        done = true
+                    }
+                    return {
+                        value: n,
+                        done: done
+                    };
+                }
+            };
+        }
+        let text = ""
+        for (const num of myNumber) {
+            text += num + "<br>"
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>
