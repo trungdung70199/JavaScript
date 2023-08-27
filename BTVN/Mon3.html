@@ -1,0 +1,45 @@
+<!-- Use html make a table -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+
+<body>
+    <h2>Make a table</h2>
+    <p id="demo"></p>
+    <script>
+        // user data
+        const users = [
+            [1, "User1", "user1@example.com"],
+            [2, "User2", "user2@example.com"],
+            [3, "User3", "user3@example.com"]
+        ];
+
+        // HTML table
+        const table = document.createElement("table");
+        const headerRow = table.insertRow();
+        const headers = ["id", "name", "email"];
+
+        for (const header of headers) {
+            const th = document.createElement("th");
+            th.textContent = header;
+            headerRow.appendChild(th);
+        }
+
+        for (const user of users) {
+            const row = table.insertRow();
+            for (const value of user) {
+                const cell = row.insertCell();
+                cell.textContent = value;
+            }
+        }
+
+        document.body.appendChild(table);
+    </script>
+</body>
+
+</html>

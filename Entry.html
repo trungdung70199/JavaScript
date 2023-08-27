@@ -1,0 +1,33 @@
+<!-- Entry method -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry method</title>
+</head>
+
+<body>
+    <h2>JavaScript Sets</h2>
+    <p>entries() return an Iterator with [value, value] pairs from a Set</p>
+    <p id="demo"></p>
+    <script>
+        /// Create a Set
+        const letters = new Set(["a", "b", "c", "d"]);
+        // const letters = (["a", "b", "c", "d"]);
+        // result is 1,a  2,b  3,c  4,d
+        // List all entries
+        const iterator = letters.entries();
+        let text = "";
+        for (const entry of iterator) {
+            text += entry + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+        // Return objects
+        document.getElementById("demo").innerHTML = typeof letters;
+        // Return true
+        document.getElementById("demo").innerHTML = letters instanceof Set;
+    </script>
+</body>
+
+</html>
