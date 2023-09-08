@@ -21,6 +21,7 @@
                         n += 10;
                         if (n == 100) {
                             done = true
+                            i
                         }
                         return {
                             value: n,
@@ -36,8 +37,9 @@
             const result = iterator.next();
             if (result.done) break;
             text += result.value + "<br>";
+
         }
-        document.getElementById("dmeo").innerHTML = text;
+        document.getElementById("demo").innerHTML = text;
     </script>
 </body>
 
