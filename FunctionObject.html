@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Object</title>
+</head>
+
+<body>
+    <p>
+        The arguments.length property returns the number of
+        arguments received by the function:
+    </p>
+    <p id="demo"></p>
+    <script>
+        //
+        function myFunction(a, b) {
+            return arguments.length;
+        }
+        // Dung arguments de in do dai cac phan tu trong myFunction
+        document.getElementById("demo").innerHTML = myFunction(a, b);
+    </script>
+</body>
+
+</html>
